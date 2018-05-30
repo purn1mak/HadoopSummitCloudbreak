@@ -1,10 +1,36 @@
 # HadoopSummitCloudbreak
 Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
-- [Lab 1](#lab-1)
-  - Access cluster
-- [Lab 2](#lab-2) - Getting started with NiFi
-  - Consuming the Meetup RSVP stream
-  - Extracting JSON elements we are interested in
-  - Splitting JSON into smaller fragments
-  - Writing JSON to File System
-- [Lab 3](#lab-3) - MiNiFi
+- [1. Log into the Cloudbreak application](#1)
+  - a.Confirm the security exception
+  - b.login page
+  - c.     Create Cloudbreak Credentials
+- [2. Creating a cluster on OpenStack](#2)
+  - a.Advanced cluster options
+  - b.Availability zone
+  - c.Choose image catalog
+  - d.Prewarmed and base images
+  - e.Enable lifetime management
+  - f.Tags
+  - g.Storage
+  - h.Recipes
+  - i.Management Packs
+  - j.External sources
+  - k.Ambari server master key
+  - l.Enable Kerberos security
+- [3. Accessing a cluster](#3)
+  - a.Cloudbreak user accounts
+  - b.Finding cluster information in the web UI
+  - c.Cluster summary
+  - d.Cluster information
+  - e.Event history
+  - f.Accessing cluster via SSH
+  - g.Access Ambari
+- [4.Managing and monitoring clusters](#4)
+  - a.Resize a cluster
+  - b.Synchronize a cluster
+c.     Stop a cluster
+d.     Restart a cluster
+e.     Terminate a cluster
+f.      Force terminate a cluster
+g.     View cluster history
+h.     History report content
