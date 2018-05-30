@@ -39,7 +39,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   
 ---------------
 
-## 1 Log into the Cloudbreak application
+## Log into the Cloudbreak application
 
 
 Cloudbreak login page. Credentials will be provided for these services by the instructor. 
