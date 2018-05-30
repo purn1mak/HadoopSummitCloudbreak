@@ -37,7 +37,6 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 - [Lab 1](#lab-1)
   - Access cluster
   
-  
 ---------------
 
 # 1. Log
