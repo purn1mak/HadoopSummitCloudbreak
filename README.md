@@ -2,8 +2,8 @@
 Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 - [1. Log into the Cloudbreak application](#1)
   - a.Confirm the security exception
-  - b.login page
-  - c.     Create Cloudbreak Credentials
+  - b.Login page
+  - c.Create Cloudbreak Credentials
 - [2. Creating a cluster on OpenStack](#2)
   - a.Advanced cluster options
   - b.Availability zone
@@ -28,9 +28,26 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 - [4.Managing and monitoring clusters](#4)
   - a.Resize a cluster
   - b.Synchronize a cluster
-c.     Stop a cluster
-d.     Restart a cluster
-e.     Terminate a cluster
-f.      Force terminate a cluster
-g.     View cluster history
-h.     History report content
+  - c.Stop a cluster
+  - d.Restart a cluster
+  - e.Terminate a cluster
+  - f.Force terminate a cluster
+  - g.View cluster history
+  - h.History report content
+- [Lab 1](#lab-1)
+  - Access cluster
+  
+  
+---------------
+
+# Lab 1
+
+## Accessing your Cluster
+
+Credentials will be provided for these services by the instructor:
+
+* SSH
+* Ambari
+
+## Use your Cluster
+
