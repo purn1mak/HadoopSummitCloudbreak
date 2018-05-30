@@ -34,22 +34,18 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - f.Force terminate a cluster
   - g.View cluster history
   - h.History report content
-- [Lab 1](#lab-1)
-  - Access cluster
   
 ---------------
 
 ## Log into the Cloudbreak application
 
+#### a.Confirm the security exception
 
+#### b. login page
 Cloudbreak login page. Credentials will be provided for these services by the instructor. 
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CB_login.png)
 
-## a.Confirm the security exception
-* SSH
-* Ambari
-
-## Use your Cluster
+#### c.Create Cloudbreak Credentials
 
 
