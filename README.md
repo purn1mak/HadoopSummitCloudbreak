@@ -48,4 +48,10 @@ Cloudbreak login page. Credentials will be provided for these services by the in
 
 #### c.Create Cloudbreak Credentials
 
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_1.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_2.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
+
 
