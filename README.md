@@ -17,7 +17,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - j.External sources
   - k.Ambari server master key
   - l.Enable Kerberos security
-- [3. Accessing a cluster](#3)
+- [3. Accessing a cluster](#accessing-a-cluster)
   - a.Cloudbreak user accounts
   - b.Finding cluster information in the web UI
   - c.Cluster summary
@@ -64,3 +64,10 @@ Cloudbreak login page. Credentials will be provided for these services by the in
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_3.png)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
+
+
+## Accessing a Cluster
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterInfo.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
