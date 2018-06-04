@@ -40,7 +40,10 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 ## Log into the Cloudbreak application
 
 #### a.Confirm the security exception
-
+Access https://cloud.eng.hortonworks.com/ 
+Click on Advance and then proceed to cloudbreak server.
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CB_login.png)
+  
 #### b. login page
 Cloudbreak login page. Credentials will be provided for these services by the instructor. 
 
