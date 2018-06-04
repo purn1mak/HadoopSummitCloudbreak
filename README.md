@@ -37,6 +37,14 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   
 ---------------
 
+##
+Cloudbreak launches clusters on the cloud in 3 easy steps:
+  - 1. Pick a Blueprint: Cloudbreak uses Ambari Blueprints to have declarative Hadoop cluster definition. Blueprints can be designed for specialized applications and workloads (such as Data Science or IoT Apps). Cloudbreak includes a few default Blueprints for common cluster configurations but you can always upload your own Blueprint to build the cluster just the way you like it.
+  - 2. Choose a Cloud: Cloudbreak is configured to work with cloud infrastructure resources (such as servers, network setup and security options). Choose the cloud infrastructure you want to use for the cluster.
+  - 3. Launch Cluster: In this step, Cloudbreak obtains the chosen cloud infrastructure platform, installs Apache Ambari and applies the desired Blueprint. The result: your cluster is launched and ready to go!
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/3EasySteps.png)
+
 ## Log into the Cloudbreak application
 
 #### a.Confirm the security exception
