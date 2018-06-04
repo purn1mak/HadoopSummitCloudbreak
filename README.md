@@ -66,6 +66,7 @@ Cloudbreak login page. Credentials will be provided for these services by the in
 
 
 ## Create a cluster on aws
+Before launching Cloudbreak on AWS, you must meet the prerequisites.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
 
