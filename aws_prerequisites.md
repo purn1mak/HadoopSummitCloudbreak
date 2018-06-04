@@ -30,7 +30,7 @@ You need this SSH key pair to SSH to the Cloudbreak instance and start Cloudbrea
 
  ### Authentication
   
-### 1.Key-based
+### 1. Key-based
 If you are using key-based authentication for Cloudbreak on AWS, you must be able to provide your AWS access key and secret key pair. Cloudbreak will use these keys to launch the resources. You must provide the access and secret keys later in the Cloudbreak web UI later when creating a credential.
 
 If you choose this option, all you need to do at this point is check your AWS account and make sure that you can access this key pair. You can generate new access and secret keys from the IAM Console > Users. Next, select a user and click on the Security credentials tab:
