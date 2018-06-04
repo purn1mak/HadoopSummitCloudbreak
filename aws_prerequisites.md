@@ -5,9 +5,9 @@ Before launching Cloudbreak on AWS, review and meet the prerequisites.
 Before launching Cloudbreak on AWS, you must meet the following prerequisites.
 
  - [AWS Account](#aws-account)
- - AWS Region(#aws-region)
- - SSH Key Pair(#ssh-key-pair)
- - Authentication(#authentication)
+ - [AWS Region](#aws-region)
+ - [SSH Key Pair](#ssh-key-pair)
+ - [Authentication](#authentication)
   - 1. Key-based
   - 2. Role-based
   
