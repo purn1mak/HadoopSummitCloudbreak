@@ -4,7 +4,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - a.Confirm the security exception
   - b.Login page
   - c.Create Cloudbreak Credentials
-- [2. Creating a cluster on AWS](#create-a-cluster-on-aws)
+- [2. Creating a cluster on AWS](#2-create-a-cluster-on-aws)
   - a.Advanced cluster options
   - b.Availability zone
   - c.Choose image catalog
@@ -17,7 +17,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - j.External sources
   - k.Ambari server master key
   - l.Enable Kerberos security
-- [3. Accessing a cluster](#accessing-a-cluster)
+- [3. Accessing a cluster](#3-accessing-a-cluster)
   - a.Cloudbreak user accounts
   - b.Finding cluster information in the web UI
   - c.Cluster summary
@@ -65,7 +65,7 @@ Cloudbreak login page. Credentials will be provided for these services by the in
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
 
 
-## Create a cluster on aws
+## 2. Create a cluster on aws
 Before launching Cloudbreak on AWS, you must meet the prerequisites.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
@@ -77,7 +77,7 @@ Before launching Cloudbreak on AWS, you must meet the prerequisites.
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
 
 
-## Accessing a Cluster
+## 3. Accessing a Cluster
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterInfo.png)
 
