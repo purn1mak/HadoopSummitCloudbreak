@@ -1,6 +1,6 @@
 # HadoopSummitCloudbreak
 Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
-- [1. Log into the Cloudbreak application](#log-into-the-cloudbreak-application)
+- [1. Log into the Cloudbreak application](#1-log-into-the-cloudbreak-application)
   - a.Confirm the security exception
   - b.Login page
   - c.Create Cloudbreak Credentials
@@ -44,7 +44,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/3EasySteps.png)
 
-## Log into the Cloudbreak application
+## 1 Log into the Cloudbreak application
 
 #### a.Confirm the security exception
 Access https://cloud.eng.hortonworks.com/ 
