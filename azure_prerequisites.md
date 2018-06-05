@@ -33,14 +33,14 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 ### Authentication
 
 
-### For Subscription Id
+### For Subscription ID
 1. Search for Subscription Service
 2. Overview
-3. Subscription Id
+3. Subscription ID
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureSubscriptionID.png)
 
-### For Tenant Id
+### For Tenant ID
 1. Look for Azure Active Directory
 2. Properties
-3. Directory Id is Tenant Id
+3. Directory ID is Tenant ID
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureTenantId.png)
