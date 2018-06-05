@@ -10,6 +10,8 @@ Before launching Cloudbreak on Azure, you must meet the following prerequisites.
  - [Authentication](#authentication)
      - [1. Key-based](#1-key-based)
      - [2. Role-based](#2-role-based)
+ - [Subscription Id](#For Subscription ID)
+ - [Tenant ID](#For Tenant ID)
 
 ### Azure Account
 In order to launch Cloudbreak on the Azure, log in to your existing Microsoft Azure account. If you don't have an account, you can set it up at https://azure.microsoft.com.
@@ -30,3 +32,9 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 
 ### Authentication
 
+
+### For Subscription ID
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureSubscriptionID.png)
+
+### For Tenant ID
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureTenantID.png)
