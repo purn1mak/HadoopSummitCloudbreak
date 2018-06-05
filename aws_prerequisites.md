@@ -57,7 +57,7 @@ If you choose this option, all you need to do at this point is check your AWS ac
 To do this go to the IAM Service:
  1. In the left pane click on Users > Select a user 
  2. Click on the Security credentials tab
- 3. Creat Access Key or use the existing Access Key. There is a limit of two.
+ 3. Creat Access Key or use an existing Access Key. There is a limit of two.
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AWS_Users.png)
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CreateAccessKey.png)
