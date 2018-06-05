@@ -24,6 +24,7 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
   - On Windows using PuTTygen
   - On Azure shell. Launch azure shell via a browser https://shell.azure.com/ and Create an SSH key pair
     Use the ssh-keygen command to generate SSH public and private key files that are by default created in the ~/.ssh directory.
+    
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_key.png)
 
 
