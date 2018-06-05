@@ -62,4 +62,10 @@ To do this go to the IAM Service:
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AWS_Users.png)
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CreateAccessKey.png)
   
+If a user does not exist then create a user.
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_1.png)
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_2.png)
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_3.png)
+
+
 If you choose this option, you can proceed to Launch the VM.  
