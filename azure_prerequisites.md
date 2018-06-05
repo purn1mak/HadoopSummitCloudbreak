@@ -37,4 +37,4 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureSubscriptionID.png)
 
 ### For Tenant ID
-![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureTenantID.png)
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureTenantId.png)
