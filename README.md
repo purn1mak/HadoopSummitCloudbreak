@@ -1,6 +1,6 @@
 # HadoopSummitCloudbreak
 Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
-- Prerequisites
+- [Prerequisites](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md)
   - a. Before launching Cloudbreak on AWS, you must meet the [AWS prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md)
   - b. Before launching Cloudbreak on Azure, you must meet the [Azure prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_prerequisites.md)
 
