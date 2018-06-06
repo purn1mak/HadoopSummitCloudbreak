@@ -103,3 +103,22 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
 
 For additional details visit [Cloudbreak documentation](https://docs.hortonworks.com/HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/content/autoscaling/index.html)
+
+
+### Autoscaling
+  - 1. Enable Auto Scaling
+  - 2. Defining an Alert
+  - 3. Create a Scaling Policy
+  - 4. Configure Autoscaling Settings
+  
+Enable Auto Scaling  
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
+
+Blah!
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScaledHistory_1.png)
+
+blah!
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScaledHistory_2.png)
+
+Look in Azure Dashboard for the newly created nodes.
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoscaledNodesAzure.png)
