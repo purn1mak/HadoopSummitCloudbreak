@@ -111,31 +111,32 @@ For additional details visit [Cloudbreak documentation](https://docs.hortonworks
   - 3. Create a Scaling Policy
   - 4. Configure Autoscaling Settings
   
-Enable Auto Scaling  
+##### 1. Enable Auto Scaling  
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
 
-Defining an Alert: After you have enabled autoscaling, define a metric-based or time-based alert.
+##### 2. Defining an Alert: 
+After you have enabled autoscaling, define a metric-based or time-based alert.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Alert.png)
 
-Creating a Scaling Policy
+##### 3. Creating a Scaling Policy
 1. In the Policy Configuration section, provide needed information:
 2. Click + to save the alert
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/PolicyConfiguration.png)
    
-Configure Autoscaling Settings:
+##### 4. Configure Autoscaling Settings:
 After enabling autoscaling, perform these steps to configure the auto scaling settings for your cluster.
-1. In the Cluster Scaling Configuration, provide the following information:
+  - 1. In the Cluster Scaling Configuration, provide the following information:
    Cooldown time: After an auto scaling event occurs, the amount of time to wait before enforcing another scaling policy.	
    Minimum Cluster Size:	The minimum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
   Maximum Cluster Size:	The maximum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
-2. Click Save to save the changes.
+  - 2. Click Save to save the changes.
 
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ScalingConfiguration.png)
 
-2 new Worker nodes are being requested at 21:33 as per the Time based Alert
+##### 2 new Worker nodes are being requested at 21:33 as per the Time based Alert
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScaledHistory_1.png)
 
-2 new Worker nodes are created.
+##### 2 new Worker nodes are created.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScalesHistory_2.png)
 
 Look in Azure Dashboard for the newly created nodes.
