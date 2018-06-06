@@ -99,7 +99,7 @@ f.Force terminate a cluster
 g.View cluster history
 h.History report content
 
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ManageCluster.png)
 
 
 For additional details visit [Cloudbreak documentation](https://docs.hortonworks.com/HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/content/autoscaling/index.html)
