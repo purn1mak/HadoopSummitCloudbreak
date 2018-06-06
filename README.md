@@ -87,3 +87,19 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterInfo.png)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
+
+
+## 3. Managing and Monitoring Clusters
+a.Resize a cluster
+b.Synchronize a cluster
+c.Stop a cluster
+d.Restart a cluster
+e.Terminate a cluster
+f.Force terminate a cluster
+g.View cluster history
+h.History report content
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
+
+
+For additional details visit [Cloudbreak documentation](https://docs.hortonworks.com/HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/content/autoscaling/index.html)
