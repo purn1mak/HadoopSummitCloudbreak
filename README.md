@@ -67,16 +67,19 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
 ## 2. Create a cluster on aws
 
-##### Basic Cluster Options
+#### Basic Cluster Options
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
+Go with defaults
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_2.png)
+Go with defaults
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_3.png)
+Go with defaults
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
 
-##### Advance Cluster Options
+#### Advance Cluster Options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
 
