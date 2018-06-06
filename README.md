@@ -71,7 +71,7 @@ Get the Access Key and Secret Key from the Prerequisites section
 
 ## 2. Create a cluster on aws
 
-#### Basic Cluster Options
+#### a. Basic Cluster Options
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
 
 Go with default storage options
@@ -87,7 +87,7 @@ SSH Key - Use existing from Pre-requisites section.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
 
-#### Advance Cluster Options
+#### b. Advance Cluster Options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
 
