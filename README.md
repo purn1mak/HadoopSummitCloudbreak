@@ -9,18 +9,13 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b.Login page
   - c.Create Cloudbreak Credentials
 - [2. Creating a cluster on AWS](#2-create-a-cluster-on-aws)
-  - a.Advanced cluster options
-  - b.Availability zone
-  - c.Choose image catalog
-  - d.Prewarmed and base images
-  - e.Enable lifetime management
-  - f.Tags
-  - g.Storage
-  - h.Recipes
-  - i.Management Packs
-  - j.External sources
-  - k.Ambari server master key
-  - l.Enable Kerberos security
+  - a.Basic cluster options
+  - b.Advanced cluster options
+      - Availability zone
+      - Choose image catalog
+      - Prewarmed and base images
+      - Enable lifetime management
+      - Tags
 - [3. Accessing a cluster](#3-accessing-a-cluster)
   - a.Cloudbreak user accounts
   - b.Finding cluster information in the web UI
@@ -72,7 +67,7 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
 ## 2. Create a cluster on aws
 
-
+##### Basic Cluster Options
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_2.png)
@@ -81,6 +76,11 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
 
+##### Advance Cluster Options
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AdvPreWarmed.png)
 
 ## 3. Accessing a Cluster
 
