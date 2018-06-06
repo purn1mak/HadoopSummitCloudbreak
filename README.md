@@ -60,7 +60,11 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_1.png)
 
+Pick the cloud provider of your choice
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_2.png)
+
+Get the Access Key and Secret Key from the Prerequisites section
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
 
@@ -69,13 +73,17 @@ Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prere
 
 #### Basic Cluster Options
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
-Go with defaults
+
+Go with default storage options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_2.png)
-Go with defaults
+
+Go with default Network setup
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_3.png)
-Go with defaults
+
+Provide admin password, this will be used when accessing Ambari.
+SSH Key - Use existing from Pre-requisites section.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
 
