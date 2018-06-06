@@ -126,9 +126,9 @@ After you have enabled autoscaling, define a metric-based or time-based alert.
 ##### 4. Configure Autoscaling Settings:
 After enabling autoscaling, perform these steps to configure the auto scaling settings for your cluster.
   - 1. In the Cluster Scaling Configuration, provide the following information:
-   Cooldown time: After an auto scaling event occurs, the amount of time to wait before enforcing another scaling policy.	
-   Minimum Cluster Size:	The minimum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
-  Maximum Cluster Size:	The maximum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
+      - Cooldown time: After an auto scaling event occurs, the amount of time to wait before enforcing another scaling policy.	
+      - Minimum Cluster Size:	The minimum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
+      - Maximum Cluster Size:	The maximum size allowed for the cluster. Auto scaling policies cannot scale the cluster below or above this size.
   - 2. Click Save to save the changes.
 
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ScalingConfiguration.png)
