@@ -24,7 +24,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - e.Event history
   - f.Accessing cluster via SSH
   - g.Access Ambari
-- [4.Managing and monitoring clusters](#4)
+- [4. Managing and monitoring clusters](#4-managing-and-monitoring-clusters)
   - a.Resize a cluster
   - b.Synchronize a cluster
   - c.Stop a cluster
@@ -33,7 +33,11 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - f.Force terminate a cluster
   - g.View cluster history
   - h.History report content
-  
+- [5. Autoscaling](#5-autoscaling)
+  - 1. Enable Auto Scaling
+  - 2. Defining an Alert
+  - 3. Create a Scaling Policy
+  - 4. Configure Autoscaling Settings
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -116,7 +120,7 @@ SSH Key - Use existing from Pre-requisites section.
 For additional details visit [Cloudbreak documentation](https://docs.hortonworks.com/HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/content/autoscaling/index.html)
 
 
-### Autoscaling
+## 4. Autoscaling
   - 1. Enable Auto Scaling
   - 2. Defining an Alert
   - 3. Create a Scaling Policy
