@@ -120,7 +120,7 @@ SSH Key - Use existing from Pre-requisites section.
 For additional details visit [Cloudbreak documentation](https://docs.hortonworks.com/HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/content/autoscaling/index.html)
 
 
-## 4. Autoscaling
+## 5. Autoscaling
   - 1. Enable Auto Scaling
   - 2. Defining an Alert
   - 3. Create a Scaling Policy
