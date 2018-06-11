@@ -55,3 +55,12 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 4. Pick the Application Id associated
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ApplicationId.png)
+
+### For App Key
+1. Look for Azure Active Directory
+2. App registration
+3. Identify the application for cloudbreak
+4. Keys
+5. Generate new Key or access an existing Key. This key is visible the first time its created only, so please makes ure to save it in a safe place.
+
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AppKey.png)
