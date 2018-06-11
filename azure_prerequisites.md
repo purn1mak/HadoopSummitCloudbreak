@@ -12,6 +12,7 @@ Before launching Cloudbreak on Azure, you must meet the following prerequisites.
      - [2. Role-based](#2-role-based)
  - [Subscription Id](#For Subscription ID)
  - [Tenant ID](#For Tenant ID)
+ - [Application ID](#For Application ID)
 
 ### Azure Account
 In order to launch Cloudbreak on the Azure, log in to your existing Microsoft Azure account. If you don't have an account, you can set it up at https://azure.microsoft.com.
@@ -46,3 +47,11 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 3. Directory ID is Tenant ID
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AzureTenantId.png)
+
+### For Application ID
+1. Look for Azure Active Directory
+2. App registration
+3. Identify the application for cloudbreak
+4. Pick the Application Id associated
+
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ApplicationId.png)
