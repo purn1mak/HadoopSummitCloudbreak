@@ -80,11 +80,11 @@ Click the Create Cluster button and the Create Cluster wizard is displayed.
 
 By default, Basic view is displayed.
 
-[Cluster Name]: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
+**Cluster Name**: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
 
-[Region]: Select the region in which you would like to launch your cluster.
+**Region**: Select the region in which you would like to launch your cluster.
 
-[Cluster Type]: Choose one of default cluster configurations.
+**Cluster Type**: Choose one of default cluster configurations.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/GeneralConfig27.png)
 
@@ -103,9 +103,12 @@ Go with default Network setup
 
 On the Security page, provide the following:
 
-Cluster User: This will be the user that you should use to log in to Ambari and other cluster UIs. By default, this is admin.
-Cluster Password: Password for the cluster user.
-SSH public key: Select the existing public SSH key or paste your key. The key will be placed on the cluster VMs so that you can use the matching private key to access the VMs via SSH. [You can get this from the prerequisites section](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md#ssh-key-pair)
+**Cluster User**: This will be the user that you should use to log in to Ambari and other cluster UIs. By default, this is admin.
+
+**Cluster Password**: Password for the cluster user.
+**SSH public key**: Select the existing public SSH key or paste your key. The key will be placed on the cluster VMs so that you can use the matching private key to access the VMs via SSH. [You can get this from the prerequisites section]
+
+(https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md#ssh-key-pair)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security.png)
 
