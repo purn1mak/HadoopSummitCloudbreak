@@ -9,8 +9,8 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b.Login page
   - c.Create Cloudbreak Credentials
 - [2. Creating a cluster on AWS](#2-create-a-cluster-on-aws)
-  - a.Basic cluster options
-  - b.Advanced cluster options
+  - a.Basic cluster options(#a-baisc-cluster-options)
+  - b.Advanced cluster options(#b-advance-cluster-options)
       - Availability zone
       - Choose image catalog
       - Prewarmed and base images
@@ -75,7 +75,7 @@ Get the Access Key and Secret Key from the Prerequisites section
 
 ## 2. Create a cluster on aws
 
-#### a. Basic Cluster Options
+### a. Basic Cluster Options
 Click the Create Cluster button and the Create Cluster wizard is displayed.
 
 By default, Basic view is displayed.
@@ -112,7 +112,7 @@ On the Security page, provide the following:
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security.png)
 
-#### b. Advance Cluster Options
+### b. Advance Cluster Options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
 
