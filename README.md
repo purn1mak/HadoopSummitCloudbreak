@@ -92,13 +92,10 @@ Go with default storage options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/HWStorage27.png)
 
-When creating a cluster, Cloudbreak installs and configures a gateway, powered by Apache Knox, to protect access to the cluster resources:
-
-This gateway is installed on the same host as the Ambari server.
- 
-By default, the gateway is deployed and Ambari is proxied through the gateway.
-
-The choice of cluster services to expose and proxy through the gateway depends on your blueprint. 
+When creating a cluster, Cloudbreak installs and configures a gateway, powered by Apache Knox, to protect access to the cluster resources:  
+This gateway is installed on the same host as the Ambari server.  
+By default, the gateway is deployed and Ambari is proxied through the gateway.  
+The choice of cluster services to expose and proxy through the gateway depends on your blueprint.   
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Gateway.png)
   
