@@ -76,20 +76,34 @@ Get the Access Key and Secret Key from the Prerequisites section
 ## 2. Create a cluster on aws
 
 #### a. Basic Cluster Options
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_1.png)
+Click the Create Cluster button and the Create Cluster wizard is displayed.
+By default, Basic view is displayed.
+Cluster Name: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
+Region: Select the region in which you would like to launch your cluster.
+Cluster Type: Choose one of default cluster configurations.
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/GeneralConfig27.png)
 
 Go with default storage options
 
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_2.png)
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/HWStorage27.png)
 
+Go with default storage options
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Gateway.png)
+  
 Go with default Network setup
 
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_3.png)
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Network27.png)
 
-Provide admin password, this will be used when accessing Ambari.
-SSH Key - Use existing from Pre-requisites section.
 
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CC_4.png)
+On the Security page, provide the following:
+
+Cluster User: This will be the user that you should use to log in to Ambari and other cluster UIs. By default, this is admin.
+Cluster Password: Password for the cluster user.
+SSH public key: Select the existing public SSH key or paste your key. The key will be placed on the cluster VMs so that you can use the matching private key to access the VMs via SSH. [You can get this from the prerequisites section](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md#ssh-key-pair)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security.png)
 
 #### b. Advance Cluster Options
 
