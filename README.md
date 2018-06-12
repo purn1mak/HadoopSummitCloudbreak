@@ -77,10 +77,14 @@ Get the Access Key and Secret Key from the Prerequisites section
 
 #### a. Basic Cluster Options
 Click the Create Cluster button and the Create Cluster wizard is displayed.
+
 By default, Basic view is displayed.
-Cluster Name: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
-Region: Select the region in which you would like to launch your cluster.
-Cluster Type: Choose one of default cluster configurations.
+
+[Cluster Name]: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
+
+[Region]: Select the region in which you would like to launch your cluster.
+
+[Cluster Type]: Choose one of default cluster configurations.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/GeneralConfig27.png)
 
