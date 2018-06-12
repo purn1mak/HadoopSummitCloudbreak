@@ -107,9 +107,7 @@ Go with default Network setup
 On the **Security page**, provide the following:  
 **Cluster User**: This will be the user that you should use to log in to Ambari and other cluster UIs. By default, this is admin.  
 **Cluster Password**: Password for the cluster user.  
-**SSH public key**: Select the existing public SSH key or paste your key. The key will be placed on the cluster VMs so that you can use the matching private key to access the VMs via SSH. [You can get this from the prerequisites section]
-
-(https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md#ssh-key-pair)
+**SSH public key**: Select the existing public SSH key or paste your key. The key will be placed on the cluster VMs so that you can use the matching private key to access the VMs via SSH. [You can get this from the prerequisites section](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_prerequisites.md#ssh-key-pair)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security.png)
 
