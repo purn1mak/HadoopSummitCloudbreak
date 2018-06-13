@@ -196,18 +196,30 @@ By default, the General Configuration screen is displayed using the `BASIC` view
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-general-configuration.png)
 
-Credential: Select the AWS credential you created.  Most users will only have 1 credential per platform which will be selected automatically.
+**Credential**: Select the AWS credential you created.  Most users will only have 1 credential per platform which will be selected automatically.
 
-Cluster Name: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
+**Cluster Name**: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
 
-Region: Select the region in w`hich you would like to launch your cluster.
+**Region**: Select the region in w`hich you would like to launch your cluster.
 
-Platform Version: Cloudbreak currently defaults to HDP 2.6.  Select the dropdown arrow and select `HDF 3.1`.
+**Platform Version**: Cloudbreak currently defaults to HDP 2.6.  Select the dropdown arrow and select `HDF 3.1`.
 
-Cluster Type: As mentioned previously, there are two supported cluster types.  We'll select the `Flow Management` clsuter type.  This will allow us to deploy a an HDF/NiFi cluster.
+**Cluster Type**: As mentioned previously, there are two supported cluster types.  We'll select the `Flow Management` clsuter type.  This will allow us to deploy a an HDF/NiFi cluster.
 
 Click the green `NEXT` button.
 
 #### b. Hardware and Storage
 
+Cloudbreak will display the `Hardware and Storage`screen.  On this screen, you have the ability to change the instance types, attached storage and where the Ambari server will be installed.  As you you can see, we will deploy 1 NiFi and 1 Zookeeper node.  In a prodution environment you would typically have at least 3 Zookeper nodes.  We will use the defaults.
+
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-hardware.png)
+
+   Click the green `NEXT` button.
+
+#### c. Gateway Configuration
+
+Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you have the ability to enable a protected gateway.  This gateway uses Knox to provide a secure access point for the cluster.  Cloudbreak does not currently support configuring Knox for HDF.  We will leave this option disabled.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-gateway.png)
+
+   Click the green `NEXT` button.
