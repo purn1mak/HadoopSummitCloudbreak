@@ -40,13 +40,11 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - 4. Configure Autoscaling Settings
 ---------------
 - [6. Creating an HDF cluster on AWS](#6-create-an-hdf-cluster-on-aws)
-  - a.Basic cluster options(#a-baisc-cluster-options)
-  - b.Advanced cluster options(#b-advance-cluster-options)
-      - Availability zone
-      - Choose image catalog
-      - Prewarmed and base images
-      - Enable lifetime management
-      - Tags
+  - a. General Configuration (#a-general-configuration)
+  - b. Hardware and Storage (#b-hardware-and-storage)
+  - c. Gateway Configuration (#c-gateway-configuration)
+  - d. Network (#d-network)
+
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
   - 1. Pick a Blueprint: Cloudbreak uses [Ambari Blueprints](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)  to have declarative Hadoop cluster definition. Blueprints can be designed for specialized applications and workloads (such as Data Science or IoT Apps). Cloudbreak includes a few default Blueprints for common cluster configurations but you can always upload your own Blueprint to build the cluster just the way you like it.
@@ -224,7 +222,7 @@ Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you
 
 Click the green `NEXT` button.
 
-#### c. Network
+#### d. Network
 
 Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
 
