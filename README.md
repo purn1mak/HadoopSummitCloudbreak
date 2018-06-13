@@ -5,9 +5,9 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b. Before launching Cloudbreak on Azure, you must meet the [Azure prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_prerequisites.md)
 
 - [1. Log into the Cloudbreak application](#1-log-into-the-cloudbreak-application)
-  - a.Confirm the security exception(#a-Confirm-the-security-exception)
-  - b.Login page
-  - c.Create Cloudbreak Credentials
+  - [a.Confirm the security exception](#a-Confirm-the-security-exception)
+  - [b.Login page](#b-login-page)
+  - [c.Create Cloudbreak Credentials](#c-Create-Cloudbreak-Credentials)
 - [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
   - [a.Basic cluster options](#a-basic-cluster-options)
   - [b.Advanced cluster options](#b-advance-cluster-options)
@@ -67,8 +67,11 @@ Cloudbreak login page. Credentials will be provided for these services by the in
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CB_login.png)
 
-#### c.Create Cloudbreak Credentials
-Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prerequisites.md)
+#### c. Create Cloudbreak Credentials
+Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prerequisites.md)  
+The first thing you need are credentials to cloud provider of your choice. 
+1. Click on Credentials in the right menu   
+2. Then click on Create Credentials  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_1.png)
 
@@ -76,7 +79,7 @@ Pick the cloud provider of your choice
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_2.png)
 
-Get the Access Key and Secret Key from the Prerequisites section
+Get the Access Key and Secret Key from the [Prerequisites section](aws_prerequisites.md#1-Key-based) 
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
 
