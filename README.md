@@ -9,8 +9,8 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b.Login page
   - c.Create Cloudbreak Credentials
 - [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
-  - a.Basic cluster options(#a-baisc-cluster-options)
-  - b.Advanced cluster options(#b-advance-cluster-options)
+  - [a.Basic cluster options](#a-basic-cluster-options)
+  - [b.Advanced cluster options](#b-advance-cluster-options)
       - Availability zone
       - Choose image catalog
       - Prewarmed and base images
