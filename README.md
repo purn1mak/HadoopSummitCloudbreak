@@ -8,7 +8,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - a.Confirm the security exception
   - b.Login page
   - c.Create Cloudbreak Credentials
-- [2. Creating a cluster on AWS](#2-create-a-cluster-on-aws)
+- [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
   - a.Basic cluster options(#a-baisc-cluster-options)
   - b.Advanced cluster options(#b-advance-cluster-options)
       - Availability zone
@@ -39,6 +39,14 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - 3. Create a Scaling Policy
   - 4. Configure Autoscaling Settings
 ---------------
+- [6. Creating an HDF cluster on AWS](#6-create-an-hdf-cluster-on-aws)
+  - a.Basic cluster options(#a-baisc-cluster-options)
+  - b.Advanced cluster options(#b-advance-cluster-options)
+      - Availability zone
+      - Choose image catalog
+      - Prewarmed and base images
+      - Enable lifetime management
+      - Tags
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
   - 1. Pick a Blueprint: Cloudbreak uses [Ambari Blueprints](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)  to have declarative Hadoop cluster definition. Blueprints can be designed for specialized applications and workloads (such as Data Science or IoT Apps). Cloudbreak includes a few default Blueprints for common cluster configurations but you can always upload your own Blueprint to build the cluster just the way you like it.
@@ -73,7 +81,7 @@ Get the Access Key and Secret Key from the Prerequisites section
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
 
 
-## 2. Create a cluster on aws
+## 2. Create an HDP cluster on aws
 
 ### a. Basic Cluster Options
 Click the Create Cluster button and the Create Cluster wizard is displayed.
@@ -176,3 +184,23 @@ After enabling autoscaling, perform these steps to configure the auto scaling se
 
 Look in Azure Dashboard for the newly created nodes.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoscaledNodesAzure.png)
+
+## 6. Creating an HDF cluster on AWS
+As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and <insert other type>.  We wil. walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
+
+In the left manu, click on `Clusters`.  Cloudbreak will display configured clusters.  Click the `CREATE CLUSTER` button.  Cloudbreak will display the Create Cluster wizard
+
+#### a. General Configuration
+
+By default, the General Configuration screen is displayed using the `BASIC` view.  The `ADVANCED` view gives you more control of AWS and cluster settings, to include tags.  You can change your view to `ADVANCED` manually or you can change your Cloudbreak preferences to show `ADVANCED` view by default.  We wil use the `BASIC` view.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-general-configuration.png)
+
+Credential: Select the AWS credential you created.  Most users will only have 1 credential per platform which will be selected automatically.
+
+Cluster Name: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
+
+Region: Select the region in which you would like to launch your cluster.
+
+Platform Version: Cloudbreak currently defaults to HDP 2.6.  Y
+Cluster Type: Choose one of default cluster configurations.
