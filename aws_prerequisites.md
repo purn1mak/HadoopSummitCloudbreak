@@ -7,9 +7,7 @@ Before launching Cloudbreak on AWS, you must meet the following prerequisites.
  - [AWS Account](#aws-account)
  - [AWS Region](#aws-region)
  - [SSH Key Pair](#ssh-key-pair)
- - [Authentication](#authentication)
-     - [1. Key-based](#1-key-based)
-     - [2. Role-based](#2-role-based)
+ - [Key Based Authentication](#Key-Based-Authentication)
   
  ### AWS Account
  In order to launch Cloudbreak on AWS, you must log in to your AWS account. If you don't have an account, you can create one at https://aws.amazon.com/.
@@ -47,9 +45,8 @@ Before launching Cloudbreak on AWS, you must meet the following prerequisites.
      - Make sure that you have access to its corresponding Private Key.
 
 
- ### Authentication
+ ### Key Based Authentication
   
-### 1. Key-based
 If you are using key-based authentication for Cloudbreak on AWS, you must be able to provide your AWS Access Key and Secret Key pair. Cloudbreak will use these keys to launch the resources. You must provide the Access and Secret Keys later in the Cloudbreak web UI later when creating a credential.
 
 If you choose this option, all you need to do at this point is check your AWS account and make sure that you can access this Key Pair. You can generate new access and secret keys from the IAM Console.
