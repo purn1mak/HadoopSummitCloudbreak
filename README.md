@@ -186,7 +186,7 @@ Look in Azure Dashboard for the newly created nodes.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoscaledNodesAzure.png)
 
 ## 6. Creating an HDF cluster on AWS
-As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and <insert other type>.  We will walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
+As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and Messaging Management (Kafka).  We will walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
 
 In the left manu, click on `Clusters`.  Cloudbreak will display configured clusters.  Click the `CREATE CLUSTER` button.  Cloudbreak will display the Create Cluster wizard
 
@@ -261,7 +261,7 @@ Click on the `ADANCED` button.  Then click the link to `Proceed`.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browser-warning-2.png)
 
-You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  
+You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  Click the green `Sign In` button.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-login.png)
 
