@@ -65,4 +65,4 @@ If a user does not exist then create a user.
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_3.png)
 
 
-If you choose this option, you can proceed to Launch the VM.  
+Once you are done with these steps [you can proceed to Launch the VM.](README.md)  
