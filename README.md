@@ -5,34 +5,34 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b. Before launching Cloudbreak on Azure, you must meet the [Azure prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_prerequisites.md)
 
 - [1. Log into the Cloudbreak application](#1-log-into-the-cloudbreak-application)
-  - [a.Confirm the security exception](#a-Confirm-the-security-exception)
-  - [b.Login page](#b-login-page)
-  - [c.Create Cloudbreak Credentials](#c-Create-Cloudbreak-Credentials)
+  - [a. Confirm the security exception](#a-Confirm-the-security-exception)
+  - [b. Login page](#b-login-page)
+  - [c. Create Cloudbreak Credentials](#c-Create-Cloudbreak-Credentials)
 - [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
-  - [a.Basic cluster options](#a-basic-cluster-options)
-  - [b.Advanced cluster options](#b-advance-cluster-options)
+  - [a. Basic cluster options](#a-basic-cluster-options)
+  - [b. Advanced cluster options](#b-advance-cluster-options)
       - Availability zone
       - Choose image catalog
       - Prewarmed and base images
       - Enable lifetime management
       - Tags
 - [3. Accessing a cluster](#3-accessing-a-cluster)
-  - a.Cloudbreak user accounts
-  - b.Finding cluster information in the web UI
-  - c.Cluster summary
-  - d.Cluster information
-  - e.Event history
-  - f.Accessing cluster via SSH
-  - g.Access Ambari
+  - a. Cloudbreak user accounts
+  - b. Finding cluster information in the web UI
+  - c. Cluster summary
+  - d. Cluster information
+  - e. Event history
+  - f. Accessing cluster via SSH
+  - g. Access Ambari
 - [4. Managing and monitoring clusters](#4-managing-and-monitoring-clusters)
-  - a.Resize a cluster
-  - b.Synchronize a cluster
-  - c.Stop a cluster
-  - d.Restart a cluster
-  - e.Terminate a cluster
-  - f.Force terminate a cluster
-  - g.View cluster history
-  - h.History report content
+  - a. Resize a cluster
+  - b. Synchronize a cluster
+  - c. Stop a cluster
+  - d. Restart a cluster
+  - e. Terminate a cluster
+  - f. Force terminate a cluster
+  - g. View cluster history
+  - h. History report content
 - [5. Autoscaling](#5-autoscaling)
   - 1. Enable Auto Scaling
   - 2. Defining an Alert
