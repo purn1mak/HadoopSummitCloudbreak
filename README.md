@@ -255,11 +255,11 @@ Click on the `Ambari URL` to open the Ambari UI.
 
 You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates.
 
-   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browswer-warning-1.png)
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browser-warning-1.png)
 
 Click on the `ADANCED` button.  Then click the button link to `Proceed`.
 
-   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browswer-warning-2.png)
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browser-warning-2.png)
 
 You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  You should see the cluster summary screen.  As you can see, we have a cluster with Zookeeper, NiFi, and the NiFi Registry.
 
