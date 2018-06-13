@@ -45,7 +45,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [d. Network](#d-network)
   - [e. Security](#e-security)
   - [f. Cluster Summary](#f-cluster-summary)
-  - [g. Ambari](#f-ambari)
+  - [g. Ambari](#g-ambari)
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -254,7 +254,6 @@ Click on the `Ambari URL` to open the Ambari UI.
 #### g. Ambari
 
 You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates.
-
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browswer-warning-1.png)
 
