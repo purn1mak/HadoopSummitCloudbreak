@@ -5,7 +5,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b. Before launching Cloudbreak on Azure, you must meet the [Azure prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_prerequisites.md)
 
 - [1. Log into the Cloudbreak application](#1-log-into-the-cloudbreak-application)
-  - a.Confirm the security exception
+  - a.Confirm the security exception(#a.-Confirm-the-security-exception)
   - b.Login page
   - c.Create Cloudbreak Credentials
 - [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
@@ -57,7 +57,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 
 ## 1. Log into the Cloudbreak application
 
-#### a.Confirm the security exception
+#### a. Confirm the security exception
 Access https://cloud.eng.hortonworks.com/ 
 Click on Advance and then proceed to cloudbreak server.
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AdvancedConnectionWarning.png)
