@@ -257,13 +257,17 @@ You will likely see a browser warning when you first open the Ambari UI.  That i
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browser-warning-1.png)
 
-Click on the `ADANCED` button.  Then click the button link to `Proceed`.
+Click on the `ADANCED` button.  Then click the link to `Proceed`.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browser-warning-2.png)
 
-You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  You should see the cluster summary screen.  As you can see, we have a cluster with Zookeeper, NiFi, and the NiFi Registry.
+You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-summary.png)
+
+You should see the cluster summary screen.  As you can see, we have a cluster with Zookeeper, NiFi, and the NiFi Registry.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-login.png)
 
 Click on the `NiFi` service in the left hand menu.  Now you can access the `Quick Links` menu for a shortcut to the NiFi UI.
 
