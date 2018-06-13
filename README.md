@@ -43,7 +43,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [b. Hardware and Storage](#b-hardware-and-storage)
   - [c. Gateway Configuration](#c-gateway-configuration)
   - [d. Network](#d-network)
-  - [e. security](#e-security)
+  - [e. Security](#e-security)
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -236,4 +236,6 @@ Cloudbreak will display the `Security` screen.  On this screen, you have the abi
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-security.png)
 
-Click the green `NEXT` button.
+You have the ability to display a `JSON` version of the blueprint.  You also have the ability display a `JSON` version of the cluster definition.  Both of these can be used with Cloudbreak CLI to programatically automate these operations.
+
+Click the green `CREATE CLUSTER` button.
