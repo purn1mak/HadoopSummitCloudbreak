@@ -43,7 +43,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [b. Hardware and Storage](#b-hardware-and-storage)
   - [c. Gateway Configuration](#c-gateway-configuration)
   - [d. Network](#d-network)
-
+  - [e. security](#e-security)
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -227,5 +227,13 @@ Click the green `NEXT` button.
 Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-network-1.png)
+
+Click the green `NEXT` button.
+
+#### e. Security
+
+Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  We will NOT be enabling Kerberos.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-security.png)
 
 Click the green `NEXT` button.
