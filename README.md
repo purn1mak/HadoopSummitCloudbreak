@@ -214,12 +214,20 @@ Cloudbreak will display the `Hardware and Storage`screen.  On this screen, you h
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-hardware.png)
 
-   Click the green `NEXT` button.
+Click the green `NEXT` button.
 
-#### c. Gateway Configuration
+#### c. Gateway ConfigurationA
 
 Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you have the ability to enable a protected gateway.  This gateway uses Knox to provide a secure access point for the cluster.  Cloudbreak does not currently support configuring Knox for HDF.  We will leave this option disabled.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-gateway.png)
 
-   Click the green `NEXT` button.
+Click the green `NEXT` button.
+
+#### c. Network
+
+Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-network-1.png)
+
+Click the green `NEXT` button.
