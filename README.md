@@ -44,6 +44,8 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [c. Gateway Configuration](#c-gateway-configuration)
   - [d. Network](#d-network)
   - [e. Security](#e-security)
+  - [f. Cluster Summary](#f-cluster-summary)
+  - [g. Ambari](#f-ambari)
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -239,3 +241,31 @@ Cloudbreak will display the `Security` screen.  On this screen, you have the abi
 You have the ability to display a `JSON` version of the blueprint.  You also have the ability display a `JSON` version of the cluster definition.  Both of these can be used with Cloudbreak CLI to programatically automate these operations.
 
 Click the green `CREATE CLUSTER` button.
+
+#### f. Cluster Summary
+
+Cloudbreak will display the `Cluster Summary` page.  It will generally take between 10-15 minutes for the cluster to be fully deployed.  As you can see, this screen looks similar to and HDP cluster.  The big difference is the `Blueprint` and `HDF Version`.
+
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-cluster-summary.png)
+
+Click on the `Ambari URL` to open the Ambari UI.
+
+#### g. Ambari
+
+You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates.
+
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browswer-warning-1.png)
+
+Click on the `ADANCED` button.  Then click the button link to `Proceed`.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-browswer-warning-2.png)
+
+You will be presented with the Ambari login page.  You will login using the username and password you specified when you created the cluster.  That should have been `admin` and `BadPass#1`.  You should see the cluster summary screen.  As you can see, we have a cluster with Zookeeper, NiFi, and the NiFi Registry.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-summary.png)
+
+Click on the `NiFi` service in the left hand menu.  Now you can access the `Quick Links` menu for a shortcut to the NiFi UI.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-nifi.png)
