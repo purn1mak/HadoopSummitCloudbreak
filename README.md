@@ -69,7 +69,7 @@ Cloudbreak login page. Credentials will be provided for these services by the in
 
 #### c. Create Cloudbreak Credentials
 Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prerequisites.md)  
-The first thing you need are credentials to cloud provider of your choice. 
+The first thing you need are credentials to a cloud provider of your choice. 
 1. Click on Credentials in the right menu   
 2. Then click on Create Credentials  
 
