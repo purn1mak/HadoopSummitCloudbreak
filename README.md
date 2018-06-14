@@ -54,14 +54,19 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
 ## 1. Log into the Cloudbreak application
 
 #### a. Confirm the security exception
-Access https://cloud.eng.hortonworks.com/ 
-Click on Advance and then proceed to cloudbreak server.
+Access Cloudbreak via a browser: https://cloudbreak-crashcourse.com/sl/
+You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates. Click on Advance and then proceed to cloudbreak server.  
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AdvancedConnectionWarning.png)
   
 #### b. login page
 Cloudbreak login page. Credentials will be provided for these services by the instructor. 
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CB_login.png)
+  
+  Once you log in as a first time user, your screen will look like this. Click on Create Credentials.  
+  
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Initial.png)
 
 #### c. Create Cloudbreak Credentials
 Before launching Cloudbreak on AWS, you must meet the [prerequisites.](aws_prerequisites.md)  
