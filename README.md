@@ -134,6 +134,7 @@ On the **Security page**, provide the following:
 
 
 ## 4. Managing and Monitoring Clusters
+Click on Clusters in the right menu, then click on a cluster name to see details.  
 - a.Resize a cluster
 - b.Synchronize a cluster
 - c.Stop a cluster
@@ -142,6 +143,8 @@ On the **Security page**, provide the following:
 - f.Force terminate a cluster
 - g.View cluster history
 - h.History report content
+
+
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ManageCluster2.png)
 
