@@ -17,12 +17,9 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [f. Cluster Summary](#f-hdp-cluster-summary)
   - [g. Ambari](#g-hdp-ambari)      
 - [3. Accessing a cluster](#3-accessing-a-cluster)
-  - a. Finding cluster information in the web UI
-  - c. Cluster summary
-  - d. Cluster information
-  - e. Event history
-  - f. Accessing cluster via SSH
-  - g. Access Ambari
+  - [a. Finding cluster information in the web UI](#a-finding-cluster-information)
+  - [b. Access Ambari](#b-access-ambari)
+  - [c. Accessing cluster via SSH](#c-accessing-cluster-via-SSH)
 - [4. Managing and monitoring clusters](#4-managing-and-monitoring-clusters)
   - [a. Resize a cluster](#a-Resize-a-cluster)
   - [b. Synchronize a cluster](#4-managing-and-monitoring-clusters)
@@ -124,21 +121,25 @@ Provide the following:
 
 
 ## 3. Accessing a Cluster
+- [3. Accessing a cluster](#3-accessing-a-cluster)
+  - [a. Finding cluster information in the web UI](#a-finding-cluster-information)
+  - [b. Access Ambari](#b-access-ambari)
+  - [c. Accessing cluster via SSH](#c-accessing-cluster-via-SSH)
 
 Once your cluster is up and running, click on the tile representing your cluster in the Cloudbreak UI to access information related the cluster and access cluster actions.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_1.png)
-
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_2.png)
   
+ ### a. Finding Cluster Information.  
  The information presented includes:  
 
-  - Cluster summary
-  - Cluster information
-  - Event history
+  ### Cluster summary
+  ### Cluster information
+  ### Event history
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster.png)
   
+### b. Access Ambari
   You can access Ambari web UI by clicking on the links provided in the Cluster Information > Ambari URL.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterInfo.png)
@@ -146,6 +147,10 @@ Once your cluster is up and running, click on the tile representing your cluster
   You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates. Click on the `ADANCED` button.  Then click the link to `Proceed`.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
+
+### c. Accessing Cluster Via SSH
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/SSH.png)
 
 
 ## 4. Managing and Monitoring Clusters
