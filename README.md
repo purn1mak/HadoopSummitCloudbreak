@@ -5,10 +5,10 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - b. Before launching Cloudbreak on Azure, you must meet the [Azure prerequisites.](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/azure_prerequisites.md)
 
 - [1. Log into the Cloudbreak application](#1-log-into-the-cloudbreak-application)
-  - [a. Confirm the security exception](#a-Confirm-the-security-exception)
+  - [a. Confirm the security exception](#a-confirm-the-security-exception)
   - [b. Login page](#b-login-page)
-  - [c. Create Cloudbreak Credentials](#c-Create-Cloudbreak-Credentials)
-- [2. Creating an HDP cluster on AWS](#2-create-an-HDP-cluster-on-aws)
+  - [c. Create Cloudbreak Credentials](#c-create-cloudbreak-credentials)
+- [2. Creating an HDP cluster on AWS](#2-create-an-hdp-cluster-on-aws)
   - [a. Basic cluster options](#a-basic-cluster-options)
   - [b. Advanced cluster options](#b-advance-cluster-options)
       - Availability zone
@@ -34,10 +34,10 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - g. View cluster history
   - h. History report content
 - [5. Autoscaling](#5-autoscaling)
-  - 1. Enable Auto Scaling
-  - 2. Defining an Alert
-  - 3. Create a Scaling Policy
-  - 4. Configure Autoscaling Settings
+  - [a. Enable Auto Scaling](#a-enable-auto-scaling)
+  - [b. Defining an Alert](#b-defining-an-alert)
+  - [c. Create a Scaling Policy](#c-create-a-scaling-policy)
+  - [d. Configure Autoscaling Settings](#d-configure-autoscaling-settings)
 - [6. Creating an HDF cluster on AWS](#6-creating-an-hdf-cluster-on-aws)
   - [a. General Configuration](#a-general-configuration)
   - [b. Hardware and Storage](#b-hardware-and-storage)
@@ -90,12 +90,10 @@ Get the Access Key and Secret Key from the [Prerequisites section](aws_prerequis
 Click the Create Cluster button and the Create Cluster wizard is displayed.
 
 By default, Basic view is displayed.
-
-**Cluster Name**: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens.
-
-**Region**: Select the region in which you would like to launch your cluster.
-
-**Cluster Type**: Choose one of default cluster configurations.
+**Select Credentials** Choose a previously created credential  
+**Cluster Name**: Enter a name for your cluster. The name must be between 5 and 40 characters, must start with a letter, and must only include lowercase letters, numbers, and hyphens  
+**Region**: Select the region in which you would like to launch your cluster  
+**Cluster Type**: Choose one of default cluster configurations  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/GeneralConfig27.png)
 
@@ -152,24 +150,20 @@ For additional details visit [Cloudbreak documentation](https://hortonworks.gith
 
 
 ## 5. Autoscaling
-  - 1. Enable Auto Scaling
-  - 2. Defining an Alert
-  - 3. Create a Scaling Policy
-  - 4. Configure Autoscaling Settings
   
-##### 1. Enable Auto Scaling  
+##### a. Enable Auto Scaling  
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
 
-##### 2. Defining an Alert: 
+##### b. Defining an Alert: 
 After you have enabled autoscaling, define a metric-based or time-based alert.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Alert.png)
 
-##### 3. Creating a Scaling Policy
+##### c. Creating a Scaling Policy
 1. In the Policy Configuration section, provide needed information:
 2. Click + to save the alert
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/PolicyConfiguration.png)
    
-##### 4. Configure Autoscaling Settings:
+##### d. Configure Autoscaling Settings:
 After enabling autoscaling, perform these steps to configure the auto scaling settings for your cluster.
   - 1. In the Cluster Scaling Configuration, provide the following information:
       - Cooldown time: After an auto scaling event occurs, the amount of time to wait before enforcing another scaling policy.	
