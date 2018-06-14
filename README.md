@@ -64,7 +64,7 @@ Cloudbreak login page. Credentials will be provided for these services by the in
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CB_login.png)
   
-  Once you log in as a first time user, your screen will look like this. Click on Create Credentials.  
+  Once you log in as a first time user, your screen will look like this. Click on `Go To Credentials`.  
   
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/InitialScreen.png)
 
