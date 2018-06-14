@@ -120,22 +120,16 @@ Provide the following:
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security27.png)
 
 
-## 3. Accessing a Cluster
-- [3. Accessing a cluster](#3-accessing-a-cluster)
-  - [a. Finding cluster information in the web UI](#a-finding-cluster-information)
-  - [b. Access Ambari](#b-access-ambari)
-  - [c. Accessing cluster via SSH](#c-accessing-cluster-via-SSH)
-
+## 3. Accessing a Cluster  
 Once your cluster is up and running, click on the tile representing your cluster in the Cloudbreak UI to access information related the cluster and access cluster actions.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_1.png)
   
  ### a. Finding Cluster Information.  
  The information presented includes:  
-
-  ### Cluster summary
-  ### Cluster information
-  ### Event history
+  - Cluster summary
+  - Cluster information
+  - Event history
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster.png)
   
