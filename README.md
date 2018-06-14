@@ -9,13 +9,13 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [b. Login page](#b-login-page)
   - [c. Create Cloudbreak Credentials](#c-create-cloudbreak-credentials)
 - [2. Creating an HDP cluster on AWS](#2-create-an-hdp-cluster-on-aws)
-  - [a. General Configuration](#hdp-a-general-configuration)
-  - [b. Hardware and Storage](#hdp-b-hardware-and-storage)
-  - [c. Gateway Configuration](#hdp-c-gateway-configuration)
-  - [d. Network](#hdp-d-network)
-  - [e. Security](#hdp-e-security)
-  - [f. Cluster Summary](#hdp-f-cluster-summary)
-  - [g. Ambari](#hdp-g-ambari)      
+  - [a. General Configuration](#a-hdp-general-configuration)
+  - [b. Hardware and Storage](#b-hdp-hardware-and-storage)
+  - [c. Gateway Configuration](#c-hdp-gateway-configuration)
+  - [d. Network](#d-hdp-Network)
+  - [e. Security](#e-hdp-Security)
+  - [f. Cluster Summary](#f-hdp-cluster-summary)
+  - [g. Ambari](#g-hdp-ambari)      
 - [3. Accessing a cluster](#3-accessing-a-cluster)
   - a. Cloudbreak user accounts
   - b. Finding cluster information in the web UI
@@ -84,14 +84,7 @@ Get the Access Key and Secret Key from the [Prerequisites section](aws_prerequis
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Credentials_3.png)
 
 
-## 2. Create an HDP cluster on aws
-  - [a. General Configuration](#a-hdp-general-configuration)
-  - [b. Hardware and Storage](#b-hdp-hardware-and-storage)
-  - [c. Gateway Configuration](#c-hdp-gateway-configuration)
-  - [d. Network](#d-hdp-Network)
-  - [e. Security](#e-hdp-Security)
-  - [f. Cluster Summary](#f-hdp-cluster-summary)
-  - [g. Ambari](#g-hdp-ambari)   
+## 2. Create an HDP cluster on aws 
   
 ###  a. HDP General Configuration
 Click the Create Cluster button and the Create Cluster wizard is displayed.
