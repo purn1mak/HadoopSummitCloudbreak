@@ -9,13 +9,13 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [b. Login page](#b-login-page)
   - [c. Create Cloudbreak Credentials](#c-create-cloudbreak-credentials)
 - [2. Creating an HDP cluster on AWS](#2-create-an-hdp-cluster-on-aws)
-  - [a. Basic cluster options](#a-basic-cluster-options)
-  - [b. Advanced cluster options](#b-advance-cluster-options)
-      - Availability zone
-      - Choose image catalog
-      - Prewarmed and base images
-      - Enable lifetime management
-      - Tags
+  - [a. General Configuration](#hdp-a-general-configuration)
+  - [b. Hardware and Storage](#hdp-b-hardware-and-storage)
+  - [c. Gateway Configuration](#hdp-c-gateway-configuration)
+  - [d. Network](#hdp-d-network)
+  - [e. Security](#hdp-e-security)
+  - [f. Cluster Summary](#hdp-f-cluster-summary)
+  - [g. Ambari](#hdp-g-ambari)      
 - [3. Accessing a cluster](#3-accessing-a-cluster)
   - a. Cloudbreak user accounts
   - b. Finding cluster information in the web UI
@@ -85,8 +85,15 @@ Get the Access Key and Secret Key from the [Prerequisites section](aws_prerequis
 
 
 ## 2. Create an HDP cluster on aws
-
-### a. Basic Cluster Options
+  - [a. General Configuration](#hdp-a-general-configuration)
+  - [b. Hardware and Storage](#hdp-b-hardware-and-storage)
+  - [c. Gateway Configuration](#hdp-c-gateway-configuration)
+  - [d. Network](#hdp-d-network)
+  - [e. Security](#hdp-e-security)
+  - [f. Cluster Summary](#hdp-f-cluster-summary)
+  - [g. Ambari](#hdp-g-ambari)   
+  
+### HDP a. General Configuration
 Click the Create Cluster button and the Create Cluster wizard is displayed.
 
 By default, Basic view is displayed.
@@ -97,6 +104,7 @@ By default, Basic view is displayed.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/GeneralConfig27.png)
 
+### HDP b. Hardware And Storage
 Go with default storage options
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/HWStorage27.png)
@@ -143,8 +151,6 @@ Click on Clusters in the right menu, then click on a cluster name to see details
 - f.Force terminate a cluster
 - g.View cluster history
 - h.History report content
-
-
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ManageCluster2.png)
 
@@ -216,7 +222,7 @@ Cloudbreak will display the `Hardware and Storage`screen.  On this screen, you h
 
 Click the green `NEXT` button.
 
-#### c. Gateway ConfigurationA
+#### c. Gateway Configuration
 
 Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you have the ability to enable a protected gateway.  This gateway uses Knox to provide a secure access point for the cluster.  Cloudbreak does not currently support configuring Knox for HDF.  We will leave this option disabled.
 
