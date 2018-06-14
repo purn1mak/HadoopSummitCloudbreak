@@ -122,7 +122,9 @@ Provide the following:
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security27.png)
 
-### b. Advance Cluster Options
+
+## 3. Accessing a Cluster
+
 Once your cluster is up and running, click on the tile representing your cluster in the Cloudbreak UI to access information related the cluster and access cluster actions.
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_1.png)
@@ -137,13 +139,11 @@ Once your cluster is up and running, click on the tile representing your cluster
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster.png)
   
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
-
-  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AdvPreWarmed.png)
-
-## 3. Accessing a Cluster
+  You can access Ambari web UI by clicking on the links provided in the Cluster Information > Ambari URL.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterInfo.png)
+  
+  You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates. Click on the `ADANCED` button.  Then click the link to `Proceed`.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ConnectionWarning.png)
 
