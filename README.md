@@ -152,25 +152,30 @@ Click on Clusters in the right menu, then click on a cluster name to see details
 ### a. Resize a cluster
 
 To Resize a cluster you can either add or remove nodes from a hostgroup. In this example, the Host Groups are worker and compute. Click Resize.    
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize.png)
 
 Cluster Resize window pops up.  
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize2.png)
 
 By default this cluster has 0 nodes in compute Host Group. Choose compute Host Group and increase nodes from 0 to 1.  
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize3.png)
 
 A new Host Group line item for compute shows up in the HARDWARE tab. Note that the ID, FQDN (Fully Qualified Domain Name), Private & Public IPs are all N/A at this point.  
 Log information about adding 1 new instance to the infrastructure also shows up in the Event History. You can continue watching this space as events happen, they are logged here. 
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize5.png)
 
 Finally when the instance is created the compute Host Group line item has all the key information like ID, FQDN and IPs.  
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ResizeResult.png)
 
 All the log information is also captured.  
+
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ResizeEventLog.png)
 
-Alternatively you can also flip over to AWS view and see the instances being created.  
+Alternatively you can also flip over to AWS view and see the instance being created.  You will now see a new instance with the name pkdatalake-276-compute.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ResizeAWS.png)
 
