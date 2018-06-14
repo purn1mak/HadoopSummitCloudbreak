@@ -17,8 +17,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [f. Cluster Summary](#f-hdp-cluster-summary)
   - [g. Ambari](#g-hdp-ambari)      
 - [3. Accessing a cluster](#3-accessing-a-cluster)
-  - a. Cloudbreak user accounts
-  - b. Finding cluster information in the web UI
+  - a. Finding cluster information in the web UI
   - c. Cluster summary
   - d. Cluster information
   - e. Event history
@@ -26,13 +25,13 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - g. Access Ambari
 - [4. Managing and monitoring clusters](#4-managing-and-monitoring-clusters)
   - [a. Resize a cluster](#a-Resize-a-cluster)
-  - b. Synchronize a cluster
-  - c. Stop a cluster
-  - d. Restart a cluster
-  - e. Terminate a cluster
-  - f. Force terminate a cluster
-  - g. View cluster history
-  - h. History report content
+  - [b. Synchronize a cluster](#4-managing-and-monitoring-clusters)
+  - [c. Stop a cluster](#4-managing-and-monitoring-clusters)
+  - [d. Restart a cluster](#4-managing-and-monitoring-clusters)
+  - [e. Terminate a cluster](#4-managing-and-monitoring-clusters)
+  - [f. Force terminate a cluster](#4-managing-and-monitoring-clusters)
+  - [g. View cluster history](#4-managing-and-monitoring-clusters)
+  - [h. History report content](#4-managing-and-monitoring-clusters)
 - [5. Autoscaling](#5-autoscaling)
   - [a. Enable Auto Scaling](#a-enable-auto-scaling)
   - [b. Defining an Alert](#b-defining-an-alert)
@@ -124,7 +123,20 @@ Provide the following:
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Security27.png)
 
 ### b. Advance Cluster Options
+Once your cluster is up and running, click on the tile representing your cluster in the Cloudbreak UI to access information related the cluster and access cluster actions.
 
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_1.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster_2.png)
+  
+ The information presented includes:  
+
+  - Cluster summary
+  - Cluster information
+  - Event history
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AccessCluster.png)
+  
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ClusterAdvanceOptions.png)
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AdvPreWarmed.png)
@@ -178,7 +190,6 @@ All the log information is also captured.
 Alternatively you can also flip over to AWS view and see the instance being created.  You will now see a new instance with the name pkdatalake-276-compute.  
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ResizeAWS.png)
-
 
 For additional details visit [Cloudbreak documentation](https://hortonworks.github.io/cloudbreak-documentation/latest/index.html)
 
