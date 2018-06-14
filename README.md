@@ -25,7 +25,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - f. Accessing cluster via SSH
   - g. Access Ambari
 - [4. Managing and monitoring clusters](#4-managing-and-monitoring-clusters)
-  - a. Resize a cluster
+  - [a. Resize a cluster](#a-Resize-a-cluster)
   - b. Synchronize a cluster
   - c. Stop a cluster
   - d. Restart a cluster
@@ -148,6 +148,23 @@ Click on Clusters in the right menu, then click on a cluster name to see details
 - h.History report content
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ManageCluster2.png)
+
+### a. Resize a cluster
+
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize2.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize3.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize4.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Resize5.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ResizeResult.png)
+
+  ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/REsizeEventLog.png)
 
 
 For additional details visit [Cloudbreak documentation](https://hortonworks.github.io/cloudbreak-documentation/latest/index.html)
