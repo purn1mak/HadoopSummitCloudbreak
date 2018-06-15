@@ -28,7 +28,6 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [e. Terminate a cluster](#4-managing-and-monitoring-clusters)
   - [f. Force terminate a cluster](#4-managing-and-monitoring-clusters)
   - [g. View cluster history](#4-managing-and-monitoring-clusters)
-  - [h. History report content](#4-managing-and-monitoring-clusters)
 - [5. Autoscaling](#5-autoscaling)
   - [a. Enable Auto Scaling](#a-enable-auto-scaling)
   - [b. Defining an Alert](#b-defining-an-alert)
@@ -163,7 +162,6 @@ Click on Clusters in the right menu, then click on a cluster name to see details
 - e.Terminate a cluster
 - f.Force terminate a cluster
 - g.View cluster history
-- h.History report content
 
   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ManageCluster2.png)
 
