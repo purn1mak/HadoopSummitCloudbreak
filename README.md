@@ -254,7 +254,225 @@ Cloudbreak expects HDF clusters to be deployed with security (Kerbers or LDAP). 
 
 #### a. Create New HDF Blueprint
 
-In the left manu, click on `Blueprints`.
+In the left manu, click on `Blueprints`.  Cloudbreak will display a list of built-in and custom blueprints.  Click on the `Flow Management: Apache NiFi, Apache NiFi Registry` blueprint.  you should see something similar to the following:
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-nifi-blueprint.png)
+
+Now click on the `RAW VIEW` tab.  You should see something similar to the following:
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-nifi-blueprint-raw.png)
+
+Now we need to copy the raw JSON from this blueprint.  We need to make some modifications.  Copy and paste the blueprint into a text edit.
+
+Change the `blueprint_name` line to  `"blueprint_name": "hdf-nifi-no-kerberos",`.  This is the name of the blueprint and it must be unique from other blueprints on the system.
+
+In the `nifi-properties` secion we need to add a new line.    We are going to add `"nifi.security.user.login.identity.provider": ""`.  Change this:
+
+```
+        {
+            "nifi-properties": {
+                "nifi.sensitive.props.key": "changemeplease",
+                "nifi.security.identity.mapping.pattern.kerb": "^(.*?)@(.*?)$",
+                "nifi.security.identity.mapping.value.kerb": "$1",
+            }
+        },
+```
+
+to this:
+
+```
+        {
+            "nifi-properties": {
+                "nifi.sensitive.props.key": "changemeplease",
+                "nifi.security.identity.mapping.pattern.kerb": "^(.*?)@(.*?)$",
+                "nifi.security.identity.mapping.value.kerb": "$1",
+                "nifi.security.user.login.identity.provider": ""
+            }
+        },
+```
+
+In the `nifi-ambari-ssl-config` section we need to change the `nifi.node.ssl.isenabled` settings from `true` to `false`.  Change this:
+
+```
+            "nifi-ambari-ssl-config": {
+                "nifi.toolkit.tls.token": "changemeplease",
+                "nifi.node.ssl.isenabled": "true",
+                "nifi.toolkit.dn.prefix": "CN=",
+                "nifi.toolkit.dn.suffix": ", OU=NIFI"
+            }
+```
+
+to this:
+
+```
+            "nifi-ambari-ssl-config": {
+                "nifi.toolkit.tls.token": "changemeplease",
+                "nifi.node.ssl.isenabled": "false",
+                "nifi.toolkit.dn.prefix": "CN=",
+                "nifi.toolkit.dn.suffix": ", OU=NIFI"
+            }
+```
+
+In the `nifi-registry-ambari-ssl-config` section we need to change the `nifi.registry.ssl.isenabled` settings from `true` to `false`.  Change this:
+
+```
+            "nifi-registry-ambari-ssl-config": {
+                "nifi.registry.ssl.isenabled": "false",
+                "nifi.registry.toolkit.dn.prefix": "CN=",
+                "nifi.registry.toolkit.dn.suffix": ", OU=NIFI"
+            }
+```
+
+to this:
+
+```
+            "nifi-registry-ambari-ssl-config": {
+                "nifi.registry.ssl.isenabled": "false",
+                "nifi.registry.toolkit.dn.prefix": "CN=",
+                "nifi.registry.toolkit.dn.suffix": ", OU=NIFI"
+            }
+```
+
+Under `host_groups` and `Servicves` we need to remove the `NIFI_CA` entry.  Change this:
+
+```
+    "host_groups": [
+        {
+            "name": "Services",
+            "components": [
+                {
+                    "name": "NIFI_CA"
+                },                {
+                    "name": "NIFI_REGISTRY_MASTER"
+                },
+```
+
+to this:
+
+```
+    "host_groups": [
+        {
+            "name": "Services",
+            "components": [
+                {
+                    "name": "NIFI_REGISTRY_MASTER"
+                },
+```
+
+The complete blueprint looks like this:
+
+```
+{
+    "Blueprints": {
+        "blueprint_name": "hdf-nifi-no-kerberos",
+        "stack_name": "HDF",
+        "stack_version": "3.1"
+    },
+    "configurations": [
+        {
+            "nifi-ambari-config": {
+                "nifi.security.encrypt.configuration.password": "changemeplease",
+                "nifi.max_mem": "1g"
+            }
+        },
+        {
+            "nifi-properties": {
+                "nifi.sensitive.props.key": "changemeplease",
+                "nifi.security.identity.mapping.pattern.kerb": "^(.*?)@(.*?)$",
+                "nifi.security.identity.mapping.value.kerb": "$1",
+                "nifi.security.user.login.identity.provider": ""
+            }
+        },
+        {
+            "nifi-ambari-ssl-config": {
+                "nifi.toolkit.tls.token": "changemeplease",
+                "nifi.node.ssl.isenabled": "false",
+                "nifi.toolkit.dn.prefix": "CN=",
+                "nifi.toolkit.dn.suffix": ", OU=NIFI"
+            }
+        },
+        {
+            "nifi-registry-ambari-config": {
+                "nifi.registry.security.encrypt.configuration.password": "changemeplease"
+            }
+        },
+        {
+            "nifi-registry-properties": {
+                "nifi.registry.sensitive.props.key": "changemeplease",
+                "nifi.registry.security.identity.mapping.pattern.kerb": "^(.*?)@(.*?)$",
+                "nifi.registry.security.identity.mapping.value.kerb": "$1"
+            }
+        },
+        {
+            "nifi-registry-ambari-ssl-config": {
+                "nifi.registry.ssl.isenabled": "false",
+                "nifi.registry.toolkit.dn.prefix": "CN=",
+                "nifi.registry.toolkit.dn.suffix": ", OU=NIFI"
+            }
+        }
+    ],
+    "host_groups": [
+        {
+            "name": "Services",
+            "components": [
+                {
+                    "name": "NIFI_REGISTRY_MASTER"
+                },
+                {
+                    "name": "METRICS_COLLECTOR"
+                },
+                {
+                    "name": "METRICS_MONITOR"
+                },
+                {
+                    "name": "METRICS_GRAFANA"
+                },
+                {
+                    "name": "ZOOKEEPER_CLIENT"
+                }
+            ],
+            "cardinality": "1"
+        },
+        {
+            "name": "NiFi",
+            "components": [
+                {
+                    "name": "NIFI_MASTER"
+                },
+                {
+                    "name": "METRICS_MONITOR"
+                },
+                {
+                    "name": "ZOOKEEPER_CLIENT"
+                }
+            ],
+            "cardinality": "1+"
+        },
+        {
+            "name": "ZooKeeper",
+            "components": [
+                {
+                    "name": "ZOOKEEPER_SERVER"
+                },
+                {
+                    "name": "METRICS_MONITOR"
+                },
+                {
+                    "name": "ZOOKEEPER_CLIENT"
+                }
+            ],
+            "cardinality": "3+"
+        }
+    ]
+}
+```
+
+Save the updated blueprint to a file.  Click on the `Upload JSON File` button and upload the blueprint you just saved.
+
+Click the `CREATE BLUEPRINT` button.  You should see the Create Blueprint screen.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-general-configuration.png)
+
 
 #### b. General Configuration
 In the left manu, click on `Clusters`.  Cloudbreak will display configured clusters.  Click the `CREATE CLUSTER` button.  Cloudbreak will display the Create Cluster wizard
@@ -306,7 +524,7 @@ Click the green `NEXT` button.
 
 #### f. Security
 
-Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  This should be a key you have created and have access to the private key.  For thos using a Cloudbreak Crashcourse provided account, selet the `cloudbreak-crashcourse` SSH key.  We will NOT be enabling Kerberos.
+Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  This should be a key you have already created and have access to the corresponding private key.  For those people using a Cloudbreak Crashcourse provided account, selet the `cloudbreak-crashcourse` SSH key.  We will NOT be enabling Kerberos, so uncheck the `Enable Kerberos Security` checkbox.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-security.png)
 
