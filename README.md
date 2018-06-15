@@ -239,8 +239,10 @@ After enabling autoscaling, perform these steps to configure the auto scaling se
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScalesHistory_2.png)
 
 Look in AWS Dashboard for the newly created nodes.  
+
 Once you are done accessing the cluster, You can now terminate the cluster and get started with Section 6 to create a new HDF cluster.  
-   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScalesHistory_2.png)
+
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Terminate.png)
 
 
 ## 6. Creating an HDF cluster on AWS
