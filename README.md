@@ -238,8 +238,10 @@ After enabling autoscaling, perform these steps to configure the auto scaling se
 #### 2 new Worker nodes are created.
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScalesHistory_2.png)
 
-Look in Azure Dashboard for the newly created nodes.
-   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoscaledNodesAzure.png)
+Look in AWS Dashboard for the newly created nodes.  
+Once you are done accessing the cluster, You can now terminate the cluster and get started with Section 6 to create a new HDF cluster.  
+   ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AutoScalesHistory_2.png)
+
 
 ## 6. Creating an HDF cluster on AWS
 As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and Messaging Management (Kafka).  We will walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
