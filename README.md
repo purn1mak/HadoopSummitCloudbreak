@@ -218,8 +218,9 @@ Use Linux Crontab Format:
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Alert.png)
 
 #### c. Creating a Scaling Policy
-1. In the Policy Configuration section, provide needed information:
-2. Click + to save the alert
+1. In the Policy Configuration section, provide needed information.   
+2. You will be using the Alert created in the above section. When the alert is triggered then this scaling policy will be applied.  
+3. Click + to save the alert.  
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/PolicyConfiguration.png)
    
 #### d. Configure Autoscaling Settings:
