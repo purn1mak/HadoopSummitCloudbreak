@@ -53,16 +53,32 @@ If you choose this option, all you need to do at this point is check your AWS ac
 
 To do this go to the IAM Service:
  1. In the left pane click on Users > Select a user 
+ 
  2. Click on the Security credentials tab
+ 
  3. Creat Access Key or use an existing Access Key. There is a limit of two.
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/AWS_Users.png)
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CreateAccessKey.png)
   
-If a user does not exist then create a user.
+To create a new user go to IAM Service:
+
+ 1.In the left pane click on Users > Select Add User
+ 
+ 2.Enter a user name, select Programming access and then click on Next: Permissions
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_1.png)
+
+ 3.For Set Permissions keep the defaul "Add usert to group"
+ 
+ 4.In Add User to group select all the groups then click Next:Review 
+ 
+ 5.Review your choices and click on Create User
+ 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_2.png)
+
+6.If your user has been created successfully you will see a similar image as below
+
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/aws_add_user_3.png)
 
 
-Once you are done with these steps [you can proceed to Launch the VM.](README.md)  
+7.Once you are done with these steps [you can proceed to Launch the VM.](README.md)  
