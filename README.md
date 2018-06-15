@@ -467,7 +467,10 @@ The complete blueprint looks like this:
 }
 ```
 
-Save the updated blueprint to a file.  Click on the `Upload JSON File` button and upload the blueprint you just saved.
+Save the updated blueprint to a file.  Click on the `Upload JSON File` button and upload the blueprint you just saved.  You should see the new blueprint you created.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-blueprint-list.png)
+   
 
 Click the `CREATE BLUEPRINT` button.  You should see the Create Blueprint screen.
 
