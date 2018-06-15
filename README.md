@@ -34,13 +34,14 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [c. Create a Scaling Policy](#c-create-a-scaling-policy)
   - [d. Configure Autoscaling Settings](#d-configure-autoscaling-settings)
 - [6. Creating an HDF cluster on AWS](#6-creating-an-hdf-cluster-on-aws)
-  - [a. General Configuration](#a-general-configuration)
-  - [b. Hardware and Storage](#b-hardware-and-storage)
-  - [c. Gateway Configuration](#c-gateway-configuration)
-  - [d. Network](#d-network)
-  - [e. Security](#e-security)
-  - [f. Cluster Summary](#f-cluster-summary)
-  - [g. Ambari](#g-ambari)
+  - [a. Create New HDF Blueprint](#b-create-new-hdf-blueprint)
+  - [b. General Configuration](#b-general-configuration)
+  - [c. Hardware and Storage](#c-hardware-and-storage)
+  - [d. Gateway Configuration](#d-gateway-configuration)
+  - [e. Network](#e-network)
+  - [f. Security](#f-security)
+  - [g. Cluster Summary](#g-cluster-summary)
+  - [h. Ambari](#h-ambari)
 ---------------
 
 # Cloudbreak launches clusters on the cloud in 3 easy steps:
@@ -249,9 +250,14 @@ Once you are done accessing the cluster, You can now terminate the cluster and g
 ## 6. Creating an HDF cluster on AWS
 As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and Messaging Management (Kafka).  We will walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
 
-In the left manu, click on `Clusters`.  Cloudbreak will display configured clusters.  Click the `CREATE CLUSTER` button.  Cloudbreak will display the Create Cluster wizard
+Cloudbreak expects HDF clusters to be deployed with security (Kerbers or LDAP).  Ensuring LDAP and/or Kerberos are propery setup is out of scope for this workshop.  Therefore, we'll need to modify the default HDF Flow Managment blueprint to loosen the security configuration.  This is not recommended for production use cases.
 
-#### a. General Configuration
+#### a. Create New HDF Blueprint
+
+In the left manu, click on `Blueprints`.
+
+#### b. General Configuration
+In the left manu, click on `Clusters`.  Cloudbreak will display configured clusters.  Click the `CREATE CLUSTER` button.  Cloudbreak will display the Create Cluster wizard
 
 By default, the General Configuration screen is displayed using the `BASIC` view.  The `ADVANCED` view gives you more control of AWS and cluster settings, to include tags.  You can change your view to `ADVANCED` manually or you can change your Cloudbreak preferences to show `ADVANCED` view by default.  We wil use the `BASIC` view.
 
@@ -269,7 +275,7 @@ By default, the General Configuration screen is displayed using the `BASIC` view
 
 Click the green `NEXT` button.
 
-#### b. Hardware and Storage
+#### c. Hardware and Storage
 
 Cloudbreak will display the `Hardware and Storage`screen.  On this screen, you have the ability to change the instance types, attached storage and where the Ambari server will be installed.  As you you can see, we will deploy 1 NiFi and 1 Zookeeper node.  In a prodution environment you would typically have at least 3 Zookeper nodes.  We will use the defaults.
 
@@ -277,7 +283,7 @@ Cloudbreak will display the `Hardware and Storage`screen.  On this screen, you h
 
 Click the green `NEXT` button.
 
-#### c. Gateway Configuration
+#### d. Gateway Configuration
 
 Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you have the ability to enable a protected gateway.  This gateway uses Knox to provide a secure access point for the cluster.  Cloudbreak does not currently support configuring Knox for HDF.  We will leave this option disabled.
 
@@ -285,7 +291,7 @@ Cloudbreak will display the `Gateway Configuration` screen.  On this screen, you
 
 Click the green `NEXT` button.
 
-#### d. Network
+#### e. Network
 
 Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
 
@@ -293,7 +299,7 @@ Cloudbreak will display the `Network` screen.  On this screen, you have the abil
 
 Click the green `NEXT` button.
 
-#### e. Security
+#### f. Security
 
 Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  We will NOT be enabling Kerberos.
 
@@ -303,7 +309,7 @@ You have the ability to display a `JSON` version of the blueprint.  You also hav
 
 Click the green `CREATE CLUSTER` button.
 
-#### f. Cluster Summary
+#### g. Cluster Summary
 
 Cloudbreak will display the `Cluster Summary` page.  It will generally take between 10-15 minutes for the cluster to be fully deployed.  As you can see, this screen looks similar to and HDP cluster.  The big difference is the `Blueprint` and `HDF Version`.
 
@@ -312,7 +318,7 @@ Cloudbreak will display the `Cluster Summary` page.  It will generally take betw
 
 Click on the `Ambari URL` to open the Ambari UI.
 
-#### g. Ambari
+#### h. Ambari
 
 You will likely see a browser warning when you first open the Ambari UI.  That is because we are using self-signed certificates.
 
