@@ -295,13 +295,13 @@ Click the green `NEXT` button.
 
 Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
 
-   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-network-1.png)
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-network.png)
 
 Click the green `NEXT` button.
 
 #### f. Security
 
-Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  We will NOT be enabling Kerberos.
+Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  This should be a key you have created and have access to the private key.  For thos using a Cloudbreak Crashcourse provided account, selet the `cloudbreak-crashcourse` SSH key.  We will NOT be enabling Kerberos.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-security.png)
 
@@ -339,3 +339,15 @@ You should see the cluster summary screen.  As you can see, we have a cluster wi
 Click on the `NiFi` service in the left hand menu.  Now you can access the `Quick Links` menu for a shortcut to the NiFi UI.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-nifi.png)
+
+You should see the NiFi UI.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-nifi.png)
+
+Back in the Ambari UI, click on the `NiFi Registry` service in the left hand menu.  Now you can access the `Quick Links` menu for a shortcut to the NiFi Registry UI.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/ambari-nifi-registry.png)
+
+You should see the NiFi Registry UI.
+
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-nifi-registry.png)
