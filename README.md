@@ -204,7 +204,17 @@ For additional details visit [Cloudbreak documentation](https://hortonworks.gith
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
 
 #### b. Defining an Alert: 
-After you have enabled autoscaling, define a metric-based or time-based alert.
+After you have enabled autoscaling, create a metric-based or time-based alert.
+Choose Time Based
+Choose the right timezone.
+Use Linux Crontab Format: 
+30 08 10 06 *  
+30 – 30th Minute  
+08 – 08 AM  
+10 – 10th Day  
+06 – 6th Month (June)  
+* – Every day of the week    
+
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Alert.png)
 
 #### c. Creating a Scaling Policy
