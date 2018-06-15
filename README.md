@@ -295,6 +295,11 @@ Click the green `NEXT` button.
 
 Cloudbreak will display the `Network` screen.  On this screen, you have the ability to specify the `Network`, `Subnet`, and `Security Groups`.  Cloudbreak defaults to creating new items.  For production use cases, we highly recommend creating and refining your own definitions within the cloud platform.  You can tell Cloudbreak to use those via the drop down menus.  We will use the default options to create new.
 
+Because we are using a custom blueprint which disables SSL, we need to update the security groups with correct ports for the NiFi and NiFi Registry UIs.  In the `SERVICES` security group, add the port `61080` with `TCP`.  Click the `+` button to add the rule.  In the `NIFI` security group, add the port `9090` with `TCP`.  Click the `+` button to add the rule.
+
+You should see something similar the following:
+
+
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-network.png)
 
 Click the green `NEXT` button.
