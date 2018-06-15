@@ -34,7 +34,7 @@ Crash Course for Cloudbreak for Data Works Summit 2018 San Jose.
   - [c. Create a Scaling Policy](#c-create-a-scaling-policy)
   - [d. Configure Autoscaling Settings](#d-configure-autoscaling-settings)
 - [6. Creating an HDF cluster on AWS](#6-creating-an-hdf-cluster-on-aws)
-  - [a. Create New HDF Blueprint](#b-create-new-hdf-blueprint)
+  - [a. Create New HDF Blueprint](#a-create-new-hdf-blueprint)
   - [b. General Configuration](#b-general-configuration)
   - [c. Hardware and Storage](#c-hardware-and-storage)
   - [d. Gateway Configuration](#d-gateway-configuration)
