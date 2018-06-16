@@ -205,9 +205,9 @@ For additional details visit [Cloudbreak documentation](https://hortonworks.gith
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
 
 #### b. Defining an Alert: 
-After you have enabled autoscaling, create a metric-based or time-based alert.
-Choose Time Based
-Choose the right timezone.
+After you have enabled autoscaling, create a metric-based or time-based alert.  
+Choose Time Based  
+Choose the right timezone.  
 Example from : http://www.quartz-scheduler.org/documentation/quartz-1.x/tutorials/crontrigger
 
 Field Name	Mandatory	Allowed Values	Allowed Special Characters.  
