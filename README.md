@@ -205,16 +205,23 @@ For additional details visit [Cloudbreak documentation](https://hortonworks.gith
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/EnableAutoscaling.png)
 
 #### b. Defining an Alert: 
-After you have enabled autoscaling, create a metric-based or time-based alert.
-Choose Time Based
-Choose the right timezone.
-Use Linux Crontab Format: 
-30 08 10 06 *  
-30 – 30th Minute  
-08 – 08 AM  
-10 – 10th Day  
-06 – 6th Month (June)  
-* – Every day of the week    
+After you have enabled autoscaling, create a metric-based or time-based alert.  
+Choose Time Based  
+Choose the right timezone.  
+Example from : http://www.quartz-scheduler.org/documentation/quartz-1.x/tutorials/crontrigger
+
+Field Name	Mandatory	Allowed Values	Allowed Special Characters.  
+Seconds	Mandatory	0-59	, - * /  
+Minutes	Mandatory	0-59	, - * /  
+Hours	Mandatory	0-23	, - * /  
+Day of month	Mandatory	1-31	, - * ? / L W  
+Month	Mandatory	1-12 or JAN-DEC	, - * /  
+Day of week	Mandatory	1-7 or SUN-SAT	, - * ? / L #  
+Year	Not Mandatory	 1970-2099	, - * /  
+
+So cron expressions can be as simple as this: * * * * ? *  
+or more complex, like this: 0/5 14,18,3-39,52 * ? JAN,MAR,SEP MON-FRI 2002-2010  
+
 
    ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/Alert.png)
 
