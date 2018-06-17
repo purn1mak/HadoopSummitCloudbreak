@@ -325,7 +325,7 @@ In the `nifi-registry-ambari-ssl-config` section we need to change the `nifi.reg
 
 ```
             "nifi-registry-ambari-ssl-config": {
-                "nifi.registry.ssl.isenabled": "false",
+                "nifi.registry.ssl.isenabled": "true",
                 "nifi.registry.toolkit.dn.prefix": "CN=",
                 "nifi.registry.toolkit.dn.suffix": ", OU=NIFI"
             }
@@ -475,7 +475,7 @@ The complete blueprint looks like this:
 }
 ```
 
-Save the updated blueprint to a file.  Click on the `Upload JSON File` button and upload the blueprint you just saved.  You should see the new blueprint you created.
+Save the updated blueprint to a file. Click on the `CREATE BLUEPRINT` button.  Enter the name of the new blueprint, something helpful such as `hdf-nifi-no-kerberos`.  Click on the `Upload JSON File` button and upload the blueprint you just saved. You should see the new blueprint you created.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-blueprint-list.png)
 
