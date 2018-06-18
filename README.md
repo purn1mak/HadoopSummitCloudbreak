@@ -477,7 +477,7 @@ The complete blueprint looks like this:
 
 Save the updated blueprint to a file. Click on the `CREATE BLUEPRINT` button.  You should see the Create Blueprint screen. Enter the name of the new blueprint, something helpful such as `hdf-nifi-no-kerberos`.  Click on the `Upload JSON File` button and upload the blueprint you just saved. You should see the new blueprint you created.
 
-   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/CreateBlueprintt.png)
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/CreateBlueprint.png)
 
 In the left menu, click on `Blueprints`, you can now see the newly created Blueprint.  
 
