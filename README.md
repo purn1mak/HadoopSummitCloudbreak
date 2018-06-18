@@ -258,7 +258,7 @@ Once you are done accessing the cluster, You can now terminate the cluster and g
 
 As of Cloudbreak 2.7, you can deploy Hortonworks Data Flow (HDF) clusters.  Currently there are two HDF cluster types supported: Flow Management (NiFi) and Messaging Management (Kafka).  We will walk you through deploying an HDF 3.1 Flow Management cluster using Cloudbreak 2.7.
 
-Cloudbreak expects HDF clusters to be deployed with security (Kerbers or LDAP).  Ensuring LDAP and/or Kerberos are propery setup is out of scope for this workshop.  Therefore, we'll need to modify the default HDF Flow Managment blueprint to loosen the security configuration.  This is not recommended for production use cases.
+Cloudbreak expects HDF clusters to be deployed with security (Kerbers or LDAP).  Ensuring LDAP and/or Kerberos are properly setup is out of scope for this workshop.  Therefore, we'll need to modify the default HDF Flow Managment blueprint to loosen the security configuration.  This is not recommended for production use cases.
 
 ### a. Create New HDF Blueprint
 
@@ -274,7 +274,7 @@ Now we need to copy the raw JSON from this blueprint.  We need to make some modi
 
 Change the `blueprint_name` line to  `"blueprint_name": "hdf-nifi-no-kerberos",`.  This is the name of the blueprint and it must be unique from other blueprints on the system.
 
-In the `nifi-properties` secion we need to add a new line.    We are going to add `"nifi.security.user.login.identity.provider": ""`.  Change this:
+In the `nifi-properties` section we need to add a new line.    We are going to add `"nifi.security.user.login.identity.provider": ""`.  Change this:
 
 ```
         {
@@ -475,11 +475,12 @@ The complete blueprint looks like this:
 }
 ```
 
-Save the updated blueprint to a file. Click on the `CREATE BLUEPRINT` button.  Enter the name of the new blueprint, something helpful such as `hdf-nifi-no-kerberos`.  Click on the `Upload JSON File` button and upload the blueprint you just saved. You should see the new blueprint you created.
+Save the updated blueprint to a file. Click on the `CREATE BLUEPRINT` button.  You should see the Create CLUSTER screen.  
+Enter the name of the new blueprint, something helpful such as `hdf-nifi-no-kerberos`.  Click on the `Upload JSON File` button and upload the blueprint you just saved. You should see the new blueprint you created.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-blueprint-list.png)
 
-Click the `CREATE BLUEPRINT` button.  You should see the Create Blueprint screen.
+Click the `CREATE CLUSTER` button.  You should see the Create CLUSTER screen.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-general-configuration.png)
 
