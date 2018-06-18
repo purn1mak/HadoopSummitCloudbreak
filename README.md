@@ -481,7 +481,7 @@ Save the updated blueprint to a file. Click on the `CREATE BLUEPRINT` button.  E
 
 Click the `CREATE BLUEPRINT` button.  You should see the Create Blueprint screen.
 
-   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-general-configuration.png)
+   ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/cb-create-blueprint.png)
 
 ### b. General Configuration
 
@@ -533,7 +533,7 @@ Click the green `NEXT` button.
 
 ### f. Security
 
-Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing on.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  This should be a key you have already created and have access to the corresponding private key.  For those people using a Cloudbreak Crashcourse provided account, selet the `cloudbreak-crashcourse` SSH key.  We will NOT be enabling Kerberos, so uncheck the `Enable Kerberos Security` checkbox.
+Cloudbreak will display the `Security` screen.  On this screen, you have the ability to specify the Ambari admin username and password.  You can create a new SSH key or selecting an existing one.  And finally, you have the ability to enable Kerberos on the cluster.  We will use `admin` for the username and `BadPass#1` for the password.  Select an existing SSH key from the drop down list.  This should be a key you have already created and have access to the corresponding private key.  For those people using a Cloudbreak Crashcourse provided account, selet the `cloudbreak-crashcourse` SSH key.  We will NOT be enabling Kerberos, so uncheck the `Enable Kerberos Security` checkbox.
 
    ![Image](https://github.com/jaraxal/HadoopSummitCloudbreak/blob/master/hdf-security.png)
 
