@@ -8,9 +8,9 @@ Before launching Cloudbreak on Azure, you must meet the following prerequisites.
  - [Azure Region](#azure-region)
  - [SSH Key Pair](#create-an-ssh-key-pair)
  - [Authentication](#authentication)
-     - [Subscription Id](#for-subscription-ID)
-     - [Tenant ID](#for-tenant-ID)
-     - [Application ID](#for-application-ID)
+     - [Subscription Id](#for-subscription-id)
+     - [Tenant ID](#for-tenant-id)
+     - [Application ID](#for-application-id)
 
 ### Azure Account
 In order to launch Cloudbreak on the Azure, log in to your existing Microsoft Azure account. If you don't have an account, you can set it up at https://azure.microsoft.com.
