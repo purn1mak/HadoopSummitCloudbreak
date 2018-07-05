@@ -81,7 +81,7 @@ GO TO THE METADATA PAGE - Click on 1. Burger Menu 2. Compute Engine 3. Metadata 
 
 click Edit, Add Item and then Save.  
 
-![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ MetadataSSHKey.png)  
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/MetadataSSHKey.png)  
 
 
 Modify the project-wide public SSH keys:
