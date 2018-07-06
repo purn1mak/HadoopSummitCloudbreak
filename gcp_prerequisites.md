@@ -84,7 +84,7 @@ click Edit, Add Item and then Save.
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/MetadataSSHKey.png)  
 
 
-Modify the project-wide public SSH keys:
+### Modify the project-wide public SSH keys:
 
 To add a public SSH key, click Add item at the bottom of the page. This will produce a text box. Copy the contents of your public SSH key file and paste them in to the text box. Repeat this process for each public SSH key that you want to add.
 To remove a public SSH key, click the removal button next to it:
