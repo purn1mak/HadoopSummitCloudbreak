@@ -49,7 +49,7 @@ When launching Cloudbreak, you will be required to provide your public SSH key. 
 ### For Application ID
 1. Look for Azure Active Directory
 2. App registration
-3. Identify the application for cloudbreak
+3. Identify the application for cloudbreak. This application should have the 'Contributor' role. In an enterprise environment, this is normally granted by your Azure Account admin.
 4. Pick the Application Id associated
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ApplicationId.png)
