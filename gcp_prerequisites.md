@@ -47,17 +47,24 @@ Click "Create Service Account"
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CreateServiceAccount.png)  
 
 ### Create Service Account - Step 2
-Give the service account a name
-Check the "Furnish a new key" box. This will download a key to your computer when you finish creating the account.
-If you are using Cloudbreak 2.7 or later, select JSON format key. Google has deprecated the P12 format and it will eventually be unsupported. 
-If you are using Cloudbreak before 2.7, I strongly recommend that you move to 2.7 because of the many excellent new features and use JSON. In Cloudbreak 2.4, P12 is the only format that is supported.
-Click the "Select a Role" dropdown
-Select the required Compute Engine roles.
-Select the Storage Admin role under Storage.
-Click outside of the roles selection dropdown to reveal the "create" button.
-All five of the roles shown are required for the service account
+Give the service account a name.  
+Check the "Furnish a new key" box. This will download a key to your computer when you finish creating the account.  
+If you are using Cloudbreak 2.7 or later, select JSON format key. Google has deprecated the P12 format and it will eventually be unsupported.  
+If you are using Cloudbreak before 2.7, I strongly recommend that you move to 2.7 because of the many excellent new features and use JSON. In Cloudbreak 2.4, P12 is the only format that is supported.  
+Click the "Select a Role" dropdown  
+Select the required Compute Engine roles.  
+Select the Storage Admin role under Storage.  
+Click outside of the roles selection dropdown to reveal the "create" button.  
+All five of the roles shown are required for the service account.    
+
 
 ![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/CreateServiceStep2.png)  
+
+If you also want to be able to use the GCP storage you need to add one more ROLE associated with the service account. The role is "Service account User" and you can find it under Service Accounts.  
+
+You should have the following Roles.  
+
+![Image](https://github.com/purn1mak/HadoopSummitCloudbreak/blob/master/ServiceAccountsRoles.png)  
 
 ### SSH key pair
 Generate a new SSH key pair or use an existing SSH key pair. You will be required to provide it when launching the VM.
