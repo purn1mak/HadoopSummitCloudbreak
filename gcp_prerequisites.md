@@ -99,3 +99,7 @@ To remove a public SSH key, click the removal button next to it:
 ### Region and zone
 Decide in which region and zone you would like to launch Cloudbreak. You can launch Cloudbreak and provision your clusters in all regions supported by GCP.
 Clusters created via Cloudbreak can be in the same or different region as Cloudbreak; when you launch a cluster, you select the region in which to launch it.
+
+
+### References
+You can also follow this document by John Whitmore: https://community.hortonworks.com/articles/174120/configuring-google-cloud-platform-and-cloudbreak-c.html 
