@@ -52,7 +52,7 @@ Check the "Furnish a new key" box. This will download a key to your computer whe
 If you are using Cloudbreak 2.7 or later, select JSON format key. Google has deprecated the P12 format and it will eventually be unsupported.  
 If you are using Cloudbreak before 2.7, I strongly recommend that you move to 2.7 because of the many excellent new features and use JSON. In Cloudbreak 2.4, P12 is the only format that is supported.  
 Click the "Select a Role" dropdown  
-Select the required Compute Engine roles.  
+Select the required Compute Engine roles (Compute Image User, Compute Instance Admin(v1) Compute Network Admin, Compute Security Admin, Compute Storage Admin).   
 Select the Storage Admin role under Storage.  
 Click outside of the roles selection dropdown to reveal the "create" button.  
 All five of the roles shown are required for the service account.    
